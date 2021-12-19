@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: hsl(231, 48%, 5%);
+    color:hsl(0, 0%, 100%);
+    width: 100vw;
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: 6% auto;
+    font-size: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 50%;
+    background: url(images/image-header-desktop.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+header p{
+    width: 100%;
+    height: 24.5rem;
+    background-color: blueviolet;
+    opacity: 0.5;
+}
+
+
+main{
+    width: 50%;
+    text-align: left;
+    padding: 3%;
+    overflow: hidden;
+    box-sizing: border-box;
+   
+}
+
+main h1{
+    word-spacing: 0.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2.1rem;
+}
+
+main p{
+    line-height: 1.3rem;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 12%;
+    word-spacing: 0.5rem;
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+    color:hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    
+}
+
+.parag1 h1, .parag2 h1, .parag3 h1{
+    margin:0;
+    padding:0;
+}
+aside h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+  
+}
+.parag1, .parag2, .parag3{
+    max-height: 10%;
+}
+
+.parag1 h1{
+    text-transform: lowercase;
+ 
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%;
+    margin-top: 4rem;
+    display:none;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*tablet screen*/
+@media all and (max-width: 768px){
+
+    .container{
+        width: 90%;
+        margin: 5%;
+        font-size: 0.8rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header{
+        width: 100%;
+    }
+    header p{
+    height: 24.5rem;
+    }
+
+    main{
+        width: 100%;
+        text-align: center;
+     }
+
+    aside{
+    width: auto;
+    display: flex;
+    flex-basis: 150px;
+    flex-direction:column;
+    justify-content: space-between;
+     }
+
+     .parag1, .parag2, .parag3{
+         max-height: 50px;
+     }
+
+}
+/*mobile screen*/
+@media all and (max-width:375px){
+
+    .container{
+        width: 90%;
+        font-size: 0.7rem;
+        overflow: visible;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header{
+        width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    main, aside{
+        width: 100%;
+        text-align: center;
+     }
+
+     .parag1, .parag2, .parag3{
+        max-height: 50px;
+    }
+}
